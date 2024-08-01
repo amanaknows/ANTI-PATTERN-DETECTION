@@ -1,0 +1,45 @@
+# Original function
+def detect_and_report_anti_patterns(code):
+    """
+    Detects and reports anti-patterns in the given code.
+
+    Args:
+        code (str): The code to analyze
+
+    Returns:
+        A report of detected anti-patterns
+    """
+    report = ""
+    if len(code) > 1000:
+        report += "**Anti-pattern detected:** Long Method\n"
+    if "god_object" in code:
+        report += "**Anti-pattern detected:** God Object\n"
+    if "switch" in code and "case" in code:
+        report += "**Anti-pattern detected:** Switch Statements with Many Cases\n"
+    return report
+
+# Inverse function
+def report_and_detect_anti_patterns(report):
+    """
+    Reports and detects anti-patterns from the given report.
+
+    Args:
+        report (str): The report of detected anti-patterns
+
+    Returns:
+        A dictionary of detected anti-patterns with their descriptions and code snippets
+    """
+    anti_patterns = {
+        "Long Method": "def long_method():\n    #...\n",
+        "God Object": "class GodObject:\n    #...\n",
+        "Switch Statements with Many Cases": "def switch_statement():\n    #...\n"
+    }
+
+    detected_patterns = {}
+    for line in report.splitlines():
+        if line.startswith("**Anti-pattern detected:**"):
+            pattern = line.split(":")[1].strip()
+            if pattern in anti_patterns:
+                detected_patterns[pattern] = anti_patterns[pattern]
+
+    return detected_patterns
