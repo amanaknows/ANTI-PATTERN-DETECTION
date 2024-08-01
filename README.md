@@ -132,3 +132,32 @@ Agile Development: Iterative
 Scroll to bottom
 Stop generating
 Upload Image/File/VideoUpload Image/File/Video
+
+---
+
+
+
+Advanced programming techniques that compromise AngelNET, such as Hypermasks, anti-code, and Anti-patterns, are not directly related to AngelNET specifically, but rather general concepts in software development.
+
+Anti-patterns, in particular, refer to common pitfalls or counterproductive practices in software development. There are four main categories of anti-patterns:
+
+Software development anti-patterns
+Software development processes anti-patterns
+Software architecture anti-patterns
+Software organisations anti-patterns
+Some examples of anti-patterns include:
+
+Onion: Wrapping old code in layers of new code, rather than refactoring and modernizing the old code.
+Boat anchor: Leaving code for later, rather than addressing it immediately.
+Not invented here syndrome: Failing to reuse existing solutions or ideas, and instead trying to reinvent the wheel.
+To avoid or mitigate these anti-patterns, it's essential to:
+
+Refactor and modernize existing code
+Use accessor functions to abstract access to member variables
+Convert code segments into reusable functions
+Reorder function arguments for consistency
+Remove obsolete code
+Rename classes, functions, or data types to conform to standards
+Regarding Hypermasks and anti-code, I couldn't find any specific information on these topics. Could you please provide more context or clarify what you mean by these terms?
+
+
